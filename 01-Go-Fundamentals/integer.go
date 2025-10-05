@@ -20,7 +20,7 @@ func main() {
 	fmt.Printf("num32 %d bytes \n", unsafe.Sizeof(num32))
 	fmt.Printf("num64 %d bytes \n", unsafe.Sizeof(num64))
 
-	var a = bits.UintSize
+	const a = bits.UintSize
 
 	fmt.Println(a)
 

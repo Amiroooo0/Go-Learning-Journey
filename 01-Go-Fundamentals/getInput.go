@@ -8,12 +8,12 @@ import (
 func main() {
 	name := getNameCLI()
 	vowels := vowelCount(name)
-	fmt.Printf("Your name have %d vowels",vowels)
+	fmt.Printf("Your name have %d vowels", vowels)
 }
 
 func getNameCLI() (name string) {
 	fmt.Printf("Enter your name : ")
-	fmt.Scanf("%s",&name)
+	fmt.Scanf("%s", &name)
 
 	for _, item := range name {
 		if !(((item <= 'z') && (item >= 'a')) || ((item <= 'Z') && (item >= 'A'))) {
