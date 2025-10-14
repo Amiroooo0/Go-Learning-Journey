@@ -7,7 +7,7 @@ func main() {
 	var grade string
 
 	fmt.Printf("enter your score :")
-	fmt.Scanf("%f",score)
+	fmt.Scanf("%f",&score)
 
 	switch {
 		case score < 10 && score >= 0 :
