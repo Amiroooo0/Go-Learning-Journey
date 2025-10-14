@@ -20,6 +20,8 @@ func main() {
 			grade = "A"
 		case score <= 20 && score >= 17 :
 			grade = "A+"
+		default :
+			grade = "your grade does not follow the format between zero and twenty"
 	}
 
 	fmt.Printf("your grade is : %s",grade)
