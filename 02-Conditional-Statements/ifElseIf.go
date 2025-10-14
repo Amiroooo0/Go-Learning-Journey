@@ -24,5 +24,6 @@ func main() {
 
 	fmt.Printf("Your tax percent is: %.2f\n", taxPercent)
 	fmt.Printf("Your tax is: %.2f\n", taxPercent*UserSalary)
+	
 	fmt.Printf("Your UserSalary is: %.2f\n", UserSalary-taxPercent*UserSalary)
 }
