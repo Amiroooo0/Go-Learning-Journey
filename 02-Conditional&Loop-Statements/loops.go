@@ -1,7 +1,36 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	lst := []int{96, 4321, -85, -85, 78, -6, 0}
+	BubbleSort(lst)
+	fmt.Printf("%v", lst)
+}
+
+func BubbleSort(list []int) {
+	finished := false
+	index := 0
+	for !finished {
+		for i, item := range list {
+			if item > list[i+1] {
+				temp := i
+				i = list[i+1]
+				list[i+1] = temp
+				for j := i + 1; j < len(list)-1; j++ {
+					temp := i
+					i = list[i+1]
+					list[i+1] = temp
+				}
+			}
+			index = i
+		}
+		if index == len(list)-1 {
+			finished = true
+		} else {
+			finished = false
+		}
+	}
 }
 
 /*
