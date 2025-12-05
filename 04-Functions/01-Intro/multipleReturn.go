@@ -8,7 +8,7 @@ func main() {
 	fmt.Printf("order price: %d, tax: %f\n", order, tax)
 }
 
-func CalculateRoomPrice(roomType string, nights int, personCount int) (int, float64) {
+func CalculatePrice(roomType string, nights int, personCount int) (int, float64) {
 	var price int
 	var tax float64
 
